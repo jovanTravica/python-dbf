@@ -10,10 +10,10 @@ import logging
 import logging.handlers
 
 smtp_handler = logging.handlers.SMTPHandler(mailhost=("smtp.gmail.com", 587),
-                                            fromaddr="jtravica1@gmail.com", 
-                                            toaddrs="jocaskull0809@gmail.com", 
+                                            fromaddr="pythondbf@gmail.com", 
+                                            toaddrs="jtravica1@gmail.com", 
                                             subject=u"Python error",
-                                            credentials=("pythondbf@gmail.com", "yBp3FTaY8yH8zNj"),
+                                            credentials=(),
                                             secure =())
 
 
