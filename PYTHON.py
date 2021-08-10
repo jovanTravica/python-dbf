@@ -10,16 +10,16 @@ import logging
 import logging.handlers
 import configparser
 
-# smtp_handler = logging.handlers.SMTPHandler(mailhost=("smtp.gmail.com", 587),
-#                                             fromaddr="pythondbf@gmail.com", 
-#                                             toaddrs="jtravica1@gmail.com", 
-#                                             subject=u"Python error",
-#                                             credentials=(config['EMAIL']['username'],config['EMAIL']['password']),
-#                                             secure =())
+smtp_handler = logging.handlers.SMTPHandler(mailhost=("smtp.gmail.com", 587),
+                                           fromaddr="*****@gmail.com", 
+                                           toaddrs="******@gmail.com", 
+                                           subject=u"Python error",
+                                           credentials=(config['EMAIL']['username'],config['EMAIL']['password']),
+                                            secure =())
 
 
-# logger = logging.getLogger()
-# logger.addHandler(smtp_handler)
+logger = logging.getLogger()
+logger.addHandler(smtp_handler)
 config = configparser.ConfigParser()
 config.read('once.conf')
 
